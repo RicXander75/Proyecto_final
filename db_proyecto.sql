@@ -1,6 +1,10 @@
+--Creamos la Base de Datos
 create database SellPoint
 
+--Usamos la Base de Datos SellPoint
+use SellPoint
 
+--Creamos la Tabla Entidades
 create table Entidades(
 	IdEntidad int identity primary key,
 	Descripcion varchar(120),
@@ -27,7 +31,13 @@ create table Entidades(
 	FechaDeRegistro date
 	);
 
+-- Creamos la tabla Inicio (es la del login)
 	create table Inicio (
 	username varchar(45),
 	pass varchar(45)
 	);
+-- Insertamos registros para nuestro login
+	insert into Inicio (username, pass) values ('admin', 'root')
+
+--Consultamos
+	select * from Inicio
