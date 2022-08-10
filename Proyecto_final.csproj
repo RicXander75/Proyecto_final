@@ -95,5 +95,8 @@
   <ItemGroup>
     <None Include="Properties\icons8_subtract_24px_1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\CRUD.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
